@@ -37,7 +37,18 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              primary: "rgb(139,195,74)",
+              secondary: "rgb(17,17,17)",
+              body: "rgb(248,246,243)",
+              accent: "rgb(106,151,57)",
+              body_neutral: "rgb(51,51,51)",
+            },
+            fontFamily: {
+              poppins: "poppins",
+            },
+            backgroundImage: {
+              leaf1: "url('../images/leaf01.png')",
+              call_to_action: "url('../images/call.jpg')",
             },
           },
         },
@@ -45,10 +56,71 @@
     </script>
   </head>
 
-  <body>
-    <!-- Menu bar section -->
+  <body class="font-poppins">
     <header>
-      <h1 class="text-5xl">Tonmoy sutradhar</h1>
+      <!-- Nav-bar section -->
+      <nav class="w-11/12 mx-auto">
+        <div class="navbar p-0 py-2">
+          <div class="navbar-start">
+            <a><img class="w-36" src="images/logo.svg" alt="" /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-medium">
+              <li class="hover:text-primary transition-colors duration-300">
+                <a>Home</a>
+              </li>
+              <li class="hover:text-primary transition-colors duration-300">
+                <a>Everything</a>
+              </li>
+              <li class="hover:text-primary transition-colors duration-300">
+                <a>Groceries</a>
+              </li>
+              <li class="hover:text-primary transition-colors duration-300">
+                <a>About</a>
+              </li>
+              <li class="hover:text-primary transition-colors duration-300">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="flex items-center gap-5 text-lg">
+              <button class="flex items-center font-semibold gap-2 text-accent">
+                <samp>$20.00</samp>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+              <button>
+                <i class="fa-solid fa-user"></i>
+              </button>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5"
+              >
+                <li class="hover:text-primary transition-colors duration-300">
+                  <a>Home</a>
+                </li>
+                <li class="hover:text-primary transition-colors duration-300">
+                  <a>Everything</a>
+                </li>
+                <li class="hover:text-primary transition-colors duration-300">
+                  <a>Groceries</a>
+                </li>
+                <li class="hover:text-primary transition-colors duration-300">
+                  <a>About</a>
+                </li>
+                <li class="hover:text-primary transition-colors duration-300">
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Main section -->
